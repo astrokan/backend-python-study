@@ -1,0 +1,22 @@
+version: '3'
+services:
+  uvicorn:
+    build: ./fastapi
+    container_name: uvicorn_container
+    expose:
+      - "8000"
+    networks:
+      - my-network
+  nginx: 
+    build: ./nginx
+    ports:
+      - "8080:80"
+    depends_on:
+      - uvicorn
+    container_name: nginx_container
+    networks:
+      - my-network
+
+networks:
+  my-network:
+    driver: bridge
