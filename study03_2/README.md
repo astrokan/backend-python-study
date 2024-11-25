@@ -12,13 +12,16 @@ NTITLE=5
 2. dotenv 패키지 추가
 3. 하드코딩한 제목 출력 수를 `—ntitle` 옵션으로 입력받은 후 env값으로 저장하는 방식으로 코드 변경
 4. argparse 모듈 추가
-## 출력 결과
+
 
 case1) `—ntitle`을 입력하지 않은 경우(실행 당시 .env 파일 속 NTITLE 값은 5)
 
 .env파일에 저장되어 있는 ntitle 값 만큼의 메일 제목을 출력한다.
 
+
 ```zsh
+```
+
 (study-envs) kun@igeon-ui-MacBookPro [18시 45분 11초] [~/dev/study03_2]
 -> % python3 email_reader.py
 
@@ -38,7 +41,6 @@ case2) `—ntitle `옵션을 입력(숫자 입력)
 
 명령행 옵션으로 전달한 수 만큼의 메일 제목을 출력한다.
 
-```zsh
 (study-envs) kun@igeon-ui-MacBookPro [20시 59분 34초] [~/dev/study03_2]
 -> % python3 email_reader.py --ntitle 3
 
