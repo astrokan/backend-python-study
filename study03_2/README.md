@@ -17,11 +17,7 @@ case1) `—ntitle`을 입력하지 않은 경우(실행 당시 .env 파일 속 N
 
 .env파일에 저장되어 있는 ntitle 값 만큼의 메일 제목을 출력한다.
 
-
 ```zsh
-
-```
-
 (study-envs) kun@igeon-ui-MacBookPro [18시 45분 11초] [~/dev/study03_2]
 -> % python3 email_reader.py
 
