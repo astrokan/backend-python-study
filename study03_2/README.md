@@ -12,7 +12,6 @@ NTITLE=5
 2. dotenv 패키지 추가
 3. 하드코딩한 제목 출력 수를 `—ntitle` 옵션으로 입력받은 후 env값으로 저장하는 방식으로 코드 변경
 4. argparse 모듈 추가
-## 출력 결과
 
 case1) `—ntitle`을 입력하지 않은 경우(실행 당시 .env 파일 속 NTITLE 값은 5)
 
@@ -38,6 +37,7 @@ case2) `—ntitle `옵션을 입력(숫자 입력)
 
 명령행 옵션으로 전달한 수 만큼의 메일 제목을 출력한다.
 
+
 ```zsh
 (study-envs) kun@igeon-ui-MacBookPro [20시 59분 34초] [~/dev/study03_2]
 -> % python3 email_reader.py --ntitle 3
@@ -49,7 +49,6 @@ Hi!!
 (광고)[Z 폴드6ㅣ플립6] 해피 추석! 선물하기 좋은 혜택을 준비했어요.
 사용자 1억 명 돌파에 감사합니다
 Mac OS X에서 Chrome 브라우저를 통해 새로운 Instagram 로그인 발생
-
 ```
 
 case3) `—ntitle` 옵션에 잘못된 자료형(문자)을 입력한 경우
